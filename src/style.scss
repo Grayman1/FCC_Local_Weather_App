@@ -1,0 +1,228 @@
+$defaultFontFamily: "Oswald", sans-serif;
+$defaultFontColor: #222;
+$bodyBackgroundColor: #BFDAF5;
+$backgroundFontColor: #333;
+$backgroundBorderColor: #B1B5B5;
+$backgroundFontFamily: "Roboto", sans-serif;
+$barHoverColor: #C4DCF5;// #85B4E6;
+$rectHoverColor: #C4DCF5;
+$tooltipBackgroundColor: #BFDAF5;//#E6F0FA;//#BFDAF5;
+$chartBackgroundColor: #F0F8FF;//#E6F0FA;
+
+html {
+  height: 100%;
+}
+
+body {
+   background-image: url('http://www.zastavki.com/pictures/1920x1200/2011/Nature_Mountains_Overcast_sky_above_the_mountains_031613_.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100%;
+   font-family: $defaultFontFamily;
+   color: rgba(255,255,255,0.8);
+   display: flex;
+   flex-direction: row;
+ //  justify-content: center;
+}
+
+.container {
+   max-width: 900px;
+   max-width: none  !important;
+   width: 900px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 50px;
+  vertical-align: middle;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: white;//$defaultFontColor;
+  text-align: center;
+}
+
+h1 .title {
+  font-size: 60px ;
+  line-height: 80px;
+  vertical-align: middle;
+  color: #2c3e50;
+  font-family: $backgroundFontFamily;
+  font-weight: 500;
+}
+
+hr {
+  margin-top: 2px;
+  border-width: 2px 0;
+  border-color: white;
+}
+
+hr#hr-bottom {
+    margin-top: 0px;
+    margin-bottom: 5px;   
+}
+
+.weatherbox {
+   -webkit-box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
+   -moz-box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
+   box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
+   background-color: rgba(95,150,207,0.33);//#6196CF; //rgba(0,0,0,0.25);
+   margin-top: 30px;
+   border: 6px outset;
+   border-radius: 25px;
+   border-color: #B1B5B5;
+}
+
+.weatherbox-body {
+   position: relative;
+   margin-right: 20px;
+   margin-left: 20px;
+   padding-top: 5px;
+   border-width: 5px;
+   border-color: black;
+}
+
+.vcenter {
+   display: block;
+   vertical-align: middle;
+   float: none;
+}
+
+#weather-icon-display {
+   height: 300px;
+   line-height: 300px;
+}
+
+#weather-icon {
+   color: white;
+   font-size: 150px;
+   vertical-align: middle;
+   display: inline-block;
+   margin-top: -60px;
+   margin-left: -30px;
+}
+
+#temperature h4 {
+   text-align: left;
+   font-size: 32px;
+   font-weight: 500;
+   margin-left: 40px;
+   margin-top: 10px;
+}
+
+#temperature p {
+    font-size: 250px;
+    margin-top: -5px;
+    margin-left: 40px;
+    margin-bottom: 0;
+    text-align: left;  
+    font-weight: 500;
+    line-height: 230px;
+}
+
+#temperature p sup {
+  vertical-align: baseline;
+  position: relative;
+  top: -135px;
+  line-height: 0;
+  font-size: 100px;
+  font-weight: 400;
+}
+
+#temperature h5 {
+   text-align: left;
+   font-size: 20px;
+   font-weight: 600;
+   margin-top: -10px;;
+   margin-left: -250px;
+   margin-bottom: -5px;
+}
+
+#temperature sup {
+   vertical-align: baseline;
+   position: relative;   
+   text-align: left;
+   font-size: 20px;
+   font-weight: 400;
+   top: -3px;
+//   margin-left: 160px;
+   margin-bottom: 10px;
+}
+
+
+#weather-condition h6 {
+   font-size: 36px;
+   margin-bottom: 2px;
+   font-weight: 500;
+}
+
+
+#weather-condition p {
+  margin-bottom: 3px;
+  font-size: 21px;
+   color: rgba(255,255,255,0.9);
+  font-weight: 700;
+}
+
+#condition, #feels-like, #prec, #humidity {
+  text-transform: capitalize;
+   margin-top: 10px;
+   font-weight: 700;
+}
+
+#hpa {
+   margin-top: 10px;
+   font-weight: 700;
+}
+
+.temp-switch input {
+  // text-align: right;
+   font-size: 100px;
+   font-weight: 500;
+}
+
+#city, h6 {
+   color: white;
+}
+
+#dateTime {
+   color: white;
+   border-width: 5px;
+   border-color: black;
+   margin-top: 5px;
+   margin-left: 25px;
+}
+
+#footer {
+    font-size: 10px;
+    text-transform: capitalize;
+    color: rgba(255,255,255, 0.4)   
+}
+
+#footnote {  
+  text-align: center;
+  color: white;//$defaultFontColor;
+  font-family: $defaultFontFamily;
+  font-weight: bold;
+  padding-top: 5px;
+  font-size: 22px;
+  margin-top: 10px;
+}
+#credit {
+  text-align: center;
+   color: rgba(255,255,255,0.9);
+//  color: white;//$backgroundFontColor;
+  font-family: $defaultFontFamily;
+  font-weight: bold;
+  padding-top: 5px;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+a {
+      color: rgba(54,128,231,0.9);
+}
+a:hover {
+  color: rgba(255, 102, 255, 0.9);
+}

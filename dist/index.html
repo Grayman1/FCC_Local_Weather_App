@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC Local Weather App_v2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.3/css/bootstrap2/bootstrap-switch.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=0.9">
+   <title>Local Weather App</title>
+
+   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900,300,500' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   <link href="css/owfont-regular.css" rel="stylesheet" type="text/css"
+<!-- -->
+</head>      
+<body>
+<div class="container text-center vcenter">
+   <h1>Local Weather App</h1>
+   <div class="weatherbox weatherbox-default">
+      <div class="weatherbox-body">
+         <div class="row">
+            <div class="col-md-6 text-left">
+               <h3 id="city"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<span>Cleveland, OH</span></h3>
+            </div>
+            <div class="col-md-6 text-right temp-switch">
+               <h3><input id="switch-temp" type="checkbox" data-off-color="success"  data-on-color="info" data-label-text="<i class='wi wi-thermometer'></i>" data-label-icon="<i class='wi wi-celsius'></i>" data-on-text="<i class='wi wi-fahrenheit'></i>" data-off-text="<i class='wi wi-celsius'></i>" /></h3>        
+            </div>
+            <div class="col-md-6 text-left">
+               <h3 id="dateTime">08/29/21 10:15</h3>
+            </div>
+         </div>
+         <hr>
+      <div id="display">
+         <div class="row">
+            <div class="col-md-4" id="weather-icon-display">
+               <div id="weather-icon"><i class="wi wi-rain"></i></div>
+            </div>
+            <div class="col-md-6 offset-md-5" id="temperature">
+               <h4>Today</h4>
+               <p><span id="temp">68</span><sup>&deg;<span id="metric">F</span></sup></p>
+               <h5>High: <span id="temp-max">76<sup>&deg;</sup></span> / Low: <span id="temp-min">49<sup>&deg;</sup></span></h5>   
+          </div>  
+        </div>  <!-- /display-row -->       
+     </div>  <!-- /display -->
+      <hr id="hr-bottom">
+      <div class="row" id="weather-condition">
+        <div class="col-md-2 col-md-offset-0">
+          <h6 style="font-size:23px;padding-top:14px;">Feels Like</h6>
+          <p id="feels-like">Feels Like</p>          
+        </div>
+        <div class="col-md-2"> 
+          <h6><i class="wi wi-cloud"></i></h6>           
+          <p id="condition">Sunny</p>          
+        </div>
+         <div class="col-md-2">
+          <h6><i class="wi wi-showers"></i></h6>
+          <p id="prec">10%</p>          
+            </div>
+        <div class="col-md-2">             
+          <h6><i class="wi wi-humidity"></i></h6>
+          <p id="humidity">30%</p>          
+        </div>
+        <div class="col-md-2">
+          <h6><i class="wi wi-strong-wind"></i></h6>
+          <p id="condition">Windy 5 S</p>          
+        </div>
+        <div class="col-md-2">
+          <h6><i class="wi wi-barometer"></i></h6>
+          <p id="hpa">10 psi</p>          
+        </div>
+        
+         </div> <!-- /row - weather-condition -->
+         <hr> 
+      </div>     <!-- weatherbox-panel-body -->
+   </div> <!-- /weatherbox-default -->
+
+
+
+<div>
+   <p class="mt-5" id="footnote">Developed using <a href="https://openweathermap.org/api" target="_blank">openWeather API</a>  by <span style="color:yellow;font-weight:bold">Grayman1</span></p>
+   <p id="credit" >Part of FCC Interview Prep Take-Home Projects</p>  
+</div>
+<div id="credit">
+        <a href="https://www.linkedin.com/in/joe-fielding-jr" target="_blank"><i class="fa fa-linkedin-square" style="font-size: 3vw;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></a>
+        <a href="https://github.com/Grayman1/FCC_Local_Weather_App" target="_blank"><i class="fa fa-github" style="font-size: 3vw;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></a>
+        <a href="https://codepen.io/grayman1/full/XWgdZzE" target="_blank"><i class="fa fa-codepen" style="font-size: 3vw;"></i></a>
+</div>
+ 
+</div> <!-- /container -->
+</body)   
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
